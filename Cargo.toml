@@ -9,7 +9,7 @@ repository = "https://github.com/binarymuse/string_cmd"
 readme = "README.md"
 license = "MIT"
 keywords = ["string", "editing", "command", "crossterm"]
-categories = ["development", "terminal", "text-editing"]
+categories = ["command-line-interface"]
 
 [features]
 default = []
