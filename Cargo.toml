@@ -1,0 +1,24 @@
+[package]
+name = "string_cmd"
+version = "0.1.0"
+description = "A simple yet powerful string editing API based on commands"
+homepage = "https://github.com/binarymuse/string_cmd"
+edition = "2021"
+documentation = "https://docs.rs/string_cmd"
+repository = "https://github.com/binarymuse/string_cmd"
+readme = "README.md"
+license = "MIT"
+keywords = ["string", "editing", "command", "crossterm"]
+categories = ["development", "terminal", "text-editing"]
+
+[features]
+default = []
+crossterm = []
+
+[dependencies]
+crossterm = "0.28.1"
+
+[[example]]
+name = "demo"
+test = true
+required-features = ["crossterm"]
