@@ -1,7 +1,6 @@
 #![doc = include_str!("../README.md")]
 
 use commands::Command;
-use commands::EditingMode;
 
 /// Command and editing mode enums
 pub mod commands;
@@ -39,7 +38,7 @@ pub mod events;
 pub struct StringEditor {
     text: String,
     cursor: usize,
-    editing_mode: EditingMode,
+    // editing_mode: EditingMode,
 }
 
 impl StringEditor {
@@ -48,7 +47,7 @@ impl StringEditor {
         Self {
             text: String::new(),
             cursor: 0,
-            editing_mode: EditingMode::Emacs,
+            // editing_mode: EditingMode::Emacs,
         }
     }
 
@@ -57,7 +56,7 @@ impl StringEditor {
         Self {
             text: text.to_string(),
             cursor: text.len(),
-            editing_mode: EditingMode::Emacs,
+            // editing_mode: EditingMode::Emacs,
         }
     }
 

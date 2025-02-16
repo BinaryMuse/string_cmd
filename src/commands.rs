@@ -1,5 +1,5 @@
 #[derive(Debug, Clone)]
-pub enum EditingMode {
+pub(crate) enum EditingMode {
     Emacs,
     Vi(ViMode),
 }
@@ -79,13 +79,13 @@ pub enum Command {
 }
 
 #[derive(Debug, Clone)]
-pub enum ViMode {
+pub(crate) enum ViMode {
     Command,
     Insert,
 }
 
 #[derive(Debug, Clone)]
-pub enum Movement {
+pub(crate) enum Movement {
     ToEndOfLine,
     WordOrTokenLeft,
     NonBlankWordLeft,
