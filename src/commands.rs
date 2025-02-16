@@ -1,15 +1,3 @@
-#[derive(Debug, Clone)]
-pub(crate) enum EditingMode {
-    Emacs,
-    Vi(ViMode),
-}
-
-impl Default for EditingMode {
-    fn default() -> Self {
-        Self::Emacs
-    }
-}
-
 /// A command to be executed on the editor. See [`crate::StringEditor::execute`].
 #[derive(Debug, Clone)]
 pub enum Command {

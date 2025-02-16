@@ -31,7 +31,7 @@ println!("Current text: {}", editor.get_text());
 println!("Cursor at: {}", editor.cursor_pos());
 ```
 
-See the [documentation](https://docs.rs/string_cmd/latest/string_cmd/) for more details.
+See the [`StringEditor` documentation](https://docs.rs/string_cmd/latest/string_cmd/struct.StringEditor.html) for more details.
 
 ## Crossterm Integration
 

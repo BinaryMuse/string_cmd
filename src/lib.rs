@@ -2,13 +2,13 @@
 
 use commands::Command;
 
-/// Command and editing mode enums
+/// Commands to be executed on the editor.
 pub mod commands;
 /// Crossterm event handling (requires the `crossterm` feature)
 pub mod events;
 
 /// A `StringEditor` instance wraps a `String` and provides a way to edit it using a variety of commands.
-/// It also keeps track of the cursor position and the editing mode (Emacs or Vi), which can be used for rendering.
+/// It also keeps track of the cursor position, which can be used for rendering.
 ///
 /// # Example
 ///
@@ -25,10 +25,10 @@ pub mod events;
 /// editor.execute(Command::Insert('o'));
 ///
 /// // Get the current text
-/// let text = editor.get_text();
+/// let text = editor.get_text(); // "Hello"
 ///
 /// // Get the cursor position
-/// let cursor = editor.cursor_pos();
+/// let cursor = editor.cursor_pos(); // 5
 /// ```
 ///
 /// In most cases, you'll want to use the `StringEditor` in conjunction with a terminal event loop.
