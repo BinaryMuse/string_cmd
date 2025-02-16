@@ -11,6 +11,9 @@ license = "MIT"
 keywords = ["string", "editing", "command", "crossterm"]
 categories = ["command-line-interface"]
 
+[package.metadata.docs.rs]
+features = ["crossterm"]
+
 [features]
 default = []
 crossterm = []
