@@ -4,6 +4,8 @@ A Rust library for building powerful string editing components with support for 
 
 `string_cmd` provides default keybindings for Emacs and Vi modes, or you can forego the default keybindings and implement your own.
 
+> **NOTE**: This library is still very young and under active development. The API is subject to change.
+
 ## Installation
 
 ```bash
