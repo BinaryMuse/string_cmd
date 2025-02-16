@@ -6,14 +6,11 @@ A Rust library for building powerful string editing components with support for 
 
 ## Installation
 
-Add this to your `Cargo.toml`:
+```bash
+cargo add string_cmd
 
-```toml
-[dependencies]
-string_cmd = "0.0.1"
-
-# If you want crossterm events integration:
-string_cmd = { version = "0.1.0", features = ["crossterm"] }
+# If you want to use the crossterm events integration:
+cargo add string_cmd --features crossterm
 ```
 
 ## Basic Usage
